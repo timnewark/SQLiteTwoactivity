@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Applicationvv</string>
+    <string name="col1"><u><b>Column 1</b></u></string>
+    <string name="col2"><u><b>Column 2</b></u></string>
+    <string name="col3"><u><b>Column 3</b></u></string>
+    <string name="col4"><u><b>Column 4</b></u></string>
+
+    <string name="PotHaz"><b>Potential <br/> hazards?</b></string>
+    <string name="WhaHap"><b>What could <br/> happen?</b></string>
+    <string name="ActReq"><b>Action <br/> required?</b></string>
+    <string name="SafPro"><b>Safe to <br/> proceed?</b></string>
+
+    <string name="WorHei"><b>Working at height</b></string>
+    <string name="FallObj"><b>Falling objects</b></string>
+    <string name="AccSit"><b>Access to site</b></string>
+    <string name="LonWor"><b>Lone working</b></string>
+    <string name="TraMan"><b>Traffic management</b></string>
+    <string name="LifOpe"><b>Lifting operations</b></string>
+    <string name="LivEle"><b>Live electricity</b></string>
+
+    <string name="D"><b>Death</b></string>
+    <string name="S"><b>Serious injury</b></string>
+
+    <!-- commenting in XML-->
+    <string name="CustomerName">Customer Name</string>
+    <string name="CustomerAge">Age</string>
+    <string name="ActiveCustomer">Active Customer</string>
+
+
+    <!-- BUTTONS-->
+    <string name="btn_viewAll">VIEW ALL</string>
+    <string name="btn_add">ADD</string>
+    <string name="btn_findNumber">FIND NUMBER</string>
+    <string name="btn_notApplicable">N/A</string>
+
+
+</resources>
