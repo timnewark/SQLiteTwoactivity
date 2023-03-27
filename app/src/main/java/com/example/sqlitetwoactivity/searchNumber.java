@@ -6,6 +6,10 @@ import android.util.Log;
 public class searchNumber{
     public String mSearchNumber;
 
+    public searchNumber(String nameString2) {
+        this.mSearchNumber = nameString2;
+    }
+
 //constructor
 
 // constructor end

@@ -4,6 +4,10 @@ package com.example.sqlitetwoactivity;
         import androidx.appcompat.app.AppCompatActivity;
 
         import android.content.Intent;
+        import android.database.Cursor;
+        import android.database.sqlite.SQLiteDatabase;
+        import android.database.sqlite.SQLiteDatabase;
+        import android.database.sqlite.SQLiteOpenHelper;
         import android.os.Bundle;
         import android.util.Log;
         import android.view.View;
@@ -36,14 +40,47 @@ public class autoRams extends AppCompatActivity{
         setContentView(R.layout.activity_autorams);
         //gets the searchTerm string
         Intent myIntent = getIntent();
-        String var = getIntent().getStringExtra("nameString");
-        //Toast.makeText(getApplicationContext(), intent.getStringExtra("username")), Toast.LENGTH_SHORT.show();
+        String IDtosearchfromIntent = getIntent().getStringExtra("nameString");
+        //Toast.makeText(getApplicationContext(), myIntent.getStringExtra("username")), Toast.LENGTH_SHORT.show();
+        //Toast.makeText(this, "Intent:"+this.getIntent().getExtras().getString("nameString"),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Intent:"+myIntent.getExtras().getString("nameString"),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "IntentOtherWOrk"+ myIntent.getStringExtra("username"), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "EditTextWork"+ myIntent.getStringExtra("nameString"), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "IDtoSearch: "+ IDtosearchfromIntent, Toast.LENGTH_SHORT).show();
         //Toast.makeText(getApplicationContext(), myIntent.getStringExtra("username")), Toast.LENGTH_SHORT.show();
         //Toast.makeText(getApplicationContext(), myIntent.getStringExtra("nameString")), Toast.LENGTH_SHORT.show();
         //Toast.makeText(this,"Hello Javatpoint",Toast.LENGTH_SHORT).show();
         Log.i("INTENT INFO " , myIntent.getStringExtra("nameString"));
         Log.i("INTENT INFO " , myIntent.getStringExtra("username"));
-        Log.i("VAR " , var);
+        //Log.i("VAR " , IDtosearch);
+
+
+        Toast.makeText(this, "IDtoSearch: "+ IDtosearchfromIntent, Toast.LENGTH_SHORT).show();
+
+        //searchNumber varSendToSetter = new searchNumber(nameString2); //SENDS NAMESTRING TO searchNumber.class
+        //varSendToSetter.setSearchNumber(nameString2); // Set the value of the setSearchNumber variable to "user inputted value of nameString
+        //searchNumber varGotFromGetter = new searchNumber(nameString2);
+        //String gotFromGetter = "sdgdsg";
+        //String newString = varSendToSetter.getSearchNumber();
+        //Toast.makeText(this, "THIS:"+ newString,Toast.LENGTH_SHORT).show();
+
+       //String returnedFromGetter =  varSendToSetter.getSearchNumber();
+        //all update code here. get from database. the code is in IDtosearch which is in a string
+        //you want to open the database, find the relevant id and then update
+       // DataBaseHelper dataBaseHelper = new DataBaseHelper(this);
+       //SQLiteDatabase db = dataBaseHelper.getReadableDatabase();
+
+        // dont think its this: // Cursor c = myDatabase.rawQuery("SELECT * FROM users WHERE age = IDtosearch", null);
+       // Cursor queryString = db.rawQuery("SELECT * FROM users WHERE age = IDtosearch", null);
+       // Log.i("QueryString " , queryString.toString());
+       // if (cursor.moveToFirst()){
+       //     return true;
+      //  }
+       // else {
+       //     return false;
+       // }
+
+        //end of updated code.
 
         //below block of code just does the automatic date/time autofill
         EditText autoDate = (EditText)findViewById(R.id.EditTextDate);
@@ -98,8 +135,24 @@ public class autoRams extends AppCompatActivity{
         mLiftingOperations =(CheckBox)findViewById(R.id.checkBox_liftingOperations);
         mLiveElectric =(CheckBox)findViewById(R.id.checkBox_liveElectric);
     }
+//dont need
+//    public boolean deleteOne(CustomerModel customerModel){
+        // find customer model in the database.  if it is found deleve it and return true.
+        //if it is not found return false.
+//        SQLiteDatabase db = this.getWritableDatabase(); //get Instance of DB
+        // will delete so needs to be writable
+ //       String queryString = "DELETE FROM " + CUSTOMER_TABLE + " WHERE " + COLUMN_ID + " = " + customerModel.getId();
 
+//        Cursor cursor = db.rawQuery(queryString, null);//cursor variable required
+//       if (cursor.moveToFirst()){
+//            return true;
+//        }
+//        else {
+//            return false;
+ //       }
 
+ //   }
+    // end of dont need
     // BELOW IS FUNCTION FOR WHEN DONE BUTTON IS PRESSED
     public void checkIfCheckboxesAreChecked(View v)
     {

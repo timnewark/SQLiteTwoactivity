@@ -9,7 +9,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            tools:ignore="MissingConstraints">
             <!-- commenting in XML-->
             <TableLayout
                 android:layout_width="match_parent"
@@ -107,11 +108,11 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/TextViewWeather"
+                        android:id="@+id/TextViewELR"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:text="Weather(autocomplete):"
+                        android:text="ELR"
                         android:textSize="18sp" />
 
                     <AutoCompleteTextView

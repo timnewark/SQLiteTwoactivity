@@ -142,7 +142,7 @@ public class DataBaseHelper extends SQLiteOpenHelper{
 
         //full getter/setter works
         String nameString = "nameStringWorking";
-        searchNumber varSendToSetter = new searchNumber(); //SENDS NAMESTRING TO searchNumber.class
+        searchNumber varSendToSetter = new searchNumber(nameString); //SENDS NAMESTRING TO searchNumber.class
         varSendToSetter.setSearchNumber(nameString); // Set the value of the setSearchNumber variable to "user inputted value of nameString
         String returnedFromGetter =  varSendToSetter.getSearchNumber();
         //full getter/setter works

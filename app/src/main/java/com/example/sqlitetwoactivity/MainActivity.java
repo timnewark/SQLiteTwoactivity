@@ -24,11 +24,11 @@ public class MainActivity extends AppCompatActivity{
     ArrayAdapter customerArrayAdapter;
     DataBaseHelper dataBaseHelper;
     public void uselessButtonToSA(View view){
-        //      get searchNumber input below
-        String nameString = mEditWordView.getText().toString();
-        //      intent to start autoRams activity
+      //get searchNumber input below
+      String nameString = mEditWordView.getText().toString();
+     // intent to start autoRams activity
         Intent myIntent = new Intent(getApplicationContext(), autoRams.class);
-        myIntent.putExtra("username", "tim");
+        myIntent.putExtra("username", "Intent Working");
         myIntent.putExtra("nameString", nameString);
         //Toast.makeText(this, myIntent.getStringExtra("nameString")), Toast.LENGTH_SHORT.show();
         startActivity(myIntent);
@@ -107,10 +107,11 @@ public class MainActivity extends AppCompatActivity{
             //      get searchNumber input below
             String nameString = mEditWordView.getText().toString();
             //      intent to start autoRams activity
-            Intent myIntent = new Intent(this, autoRams.class);
-            myIntent.putExtra("username", "tim");
-            //intent.putExtra("nameString", nameString);
-            startActivity(myIntent);
+           Intent myIntent = new Intent(this, autoRams.class);
+           myIntent.putExtra("username", "tim");
+           myIntent.putExtra("nameString", nameString);
+           startActivity(myIntent);
+
 
 
             //start of new
